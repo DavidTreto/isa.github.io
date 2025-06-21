@@ -1,0 +1,592 @@
+/* --- Reset Básico y Fuentes --- */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            /* Puedes cambiar por una fuente similar a la imagen */
+            color: #333;
+            /* Texto principal oscuro */
+            overflow-x: hidden;
+            /* Evita scroll horizontal no deseado */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            /* Hereda el color del padre para los enlaces */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* --- Estilos del Encabezado (Header) --- */
+        .main-header {
+            width: 100%;
+            position: fixed;
+            /* Hace que el encabezado se quede fijo al hacer scroll */
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            /* Fondo blanco casi opaco */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            /* Asegura que esté por encima de otros elementos */
+            padding: 10px 0;
+            /* Padding superior e inferior */
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            /* Espacia el logo a la izquierda y nav a la derecha */
+            align-items: center;
+            /* Alinea verticalmente */
+            max-width: 1200px;
+            /* Ancho máximo del contenido del header */
+            margin: 0 auto;
+            /* Centra el contenido */
+            padding: 0 20px;
+            /* Padding a los lados */
+            position: relative;
+        }
+
+        .nav-links ul {
+            display: flex;
+            gap: 40px;
+            /* Espacio entre los enlaces */
+        }
+
+        .nav-links li a {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            /* Gris oscuro */
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            color: #000;
+            /* Negro al pasar el ratón */
+        }
+
+        /* El logo ahora estará a la izquierda */
+        .logo {
+            font-size: 24px;
+            /* Tamaño del logo */
+            font-weight: bold;
+            color: #333;
+            /* Color del logo */
+            letter-spacing: 2px;
+            /* Espaciado entre letras */
+            /* Eliminamos el margin y posicionamiento para que quede a la izquierda por flexbox */
+        }
+
+        /* --- Sección Principal (Hero Section) --- */
+        #inicio.hero-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            /* Ocupa el 100% de la altura de la ventana */
+            background-image: url('img_isabela/hero-background.jpg');
+            /* Asegúrate de que esta ruta sea correcta */
+            background-size: cover;
+            /* Cubre toda el área */
+            background-position: center center;
+            /* Centra la imagen */
+            display: flex;
+            justify-content: center;
+            /* Centra horizontalmente el contenido */
+            align-items: center;
+            /* Centra verticalmente el contenido */
+            color: #fff;
+            /* Color del texto sobre la imagen */
+            text-align: center;
+            padding-top: 80px;
+            /* Espacio para que el header fijo no tape el contenido */
+        }
+
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Fondo semi-transparente para el texto */
+            padding: 30px 40px;
+            border-radius: 8px;
+            max-width: 600px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5em;
+            /* Tamaño grande para el título */
+            margin-bottom: 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .btn-vermas {
+            display: inline-block;
+            background-color: #fff;
+            /* Fondo blanco para el botón */
+            color: #333;
+            /* Texto oscuro para el botón */
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border: 2px solid #fff;
+            /* Borde blanco */
+        }
+
+        .btn-vermas:hover {
+            background-color: transparent;
+            /* Fondo transparente al pasar el ratón */
+            color: #fff;
+            /* Texto blanco al pasar el ratón */
+        }
+
+        /* --- Ícono de WhatsApp Flotante --- */
+        .whatsapp-icon {
+            position: fixed;
+            /* Lo hace flotante */
+            bottom: 25px;
+            /* Margen inferior */
+            right: 25px;
+            /* Margen derecho */
+            z-index: 1001;
+            /* Por encima de todo */
+        }
+
+        .whatsapp-icon a {
+            display: block;
+            /* Asegura que el enlace sea un bloque para el círculo */
+            background-color: #25d366;
+            /* Color de WhatsApp */
+            color: white;
+            width: 60px;
+            /* Tamaño del círculo */
+            height: 60px;
+            border-radius: 50%;
+            /* Forma circular */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            /* Tamaño del ícono */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-icon a:hover {
+            transform: scale(1.1);
+            /* Efecto de crecimiento al pasar el ratón */
+        }
+
+        /* --- Contenido de Productos --- */
+        #productos.products-section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            /* Centra el texto del título */
+            background-color: #000;
+            /* Fondo negro para la sección de productos */
+            color: #fff;
+            /* Texto blanco */
+        }
+
+        .products-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #fff;
+            /* Color del título blanco */
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            /* Columnas responsivas */
+            gap: 20px;
+            /* Espacio entre los productos */
+            justify-content: center;
+            /* Centra las tarjetas si no llenan la fila */
+        }
+
+        .product-card {
+            background-color: #1a1a1a;
+            /* Fondo de la tarjeta de producto ligeramente más claro que el fondo de la sección */
+            border-radius: 8px;
+            overflow: hidden;
+            /* Asegura que la imagen no se salga */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            /* Sombra más pronunciada */
+            display: flex;
+            flex-direction: column;
+            /* Apila contenido verticalmente */
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            /* Altura fija para las imágenes */
+            object-fit: cover;
+            /* Recorta la imagen para que quepa */
+            display: block;
+        }
+
+        .product-info {
+            padding: 15px;
+            text-align: center;
+            flex-grow: 1;
+            /* Permite que el contenido de info crezca */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* Empuja el botón hacia abajo si el título es largo */
+        }
+
+        .product-title {
+            font-size: 1.1em;
+            font-weight: normal;
+            /* Normal como en la imagen, no bold */
+            margin-bottom: 5px;
+            color: #fff;
+            /* Texto blanco para el título del producto */
+        }
+
+        .product-price {
+            font-size: 1.2em;
+            /* Un poco más pequeño el precio */
+            color: #fff;
+            /* Blanco para el precio */
+            margin-bottom: 15px;
+            font-weight: bold;
+            /* El precio sí en negrita */
+        }
+
+        .btn-comprar {
+            display: inline-block;
+            background-color: #333;
+            /* Gris oscuro para el botón, como en la imagen de productos */
+            color: #fff;
+            /* Texto blanco para el botón */
+            padding: 10px 20px;
+            border-radius: 5px;
+            /* Bordes ligeramente redondeados */
+            font-weight: bold;
+            text-transform: capitalize;
+            /* "Comprar" con C mayúscula, el resto minúscula */
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border: none;
+            /* Quita el borde por defecto */
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            /* Sombra sutil para el botón */
+        }
+
+        .btn-comprar:hover {
+            background-color: #555;
+            /* Gris un poco más claro al pasar el ratón */
+            color: #fff;
+        }
+
+        /* --- Estilos del Pie de Página (Footer) --- */
+        #contacto.main-footer {
+            background-color: #f5f5f5;
+            /* Fondo gris muy claro para el footer */
+            color: #333;
+            /* Texto oscuro */
+            padding: 40px 20px;
+            /* Padding general */
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            /* Permite que las columnas se envuelvan en pantallas pequeñas */
+            gap: 60px;
+            /* Más espacio entre columnas */
+        }
+
+        .footer-column {
+            flex: 1;
+            /* Distribuye el espacio equitativamente */
+            min-width: 250px;
+            /* Ancho mínimo para evitar que se aplasten */
+            padding: 10px 0;
+        }
+
+        .footer-column h3 {
+            font-size: 1.1em;
+            /* Un poco más pequeña la letra de los títulos */
+            margin-bottom: 20px;
+            color: #333;
+            /* Título de columna */
+        }
+
+        .footer-column p {
+            font-size: 0.85em;
+            /* Tamaño de letra más pequeño para párrafos */
+            line-height: 1.5;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .newsletter-form {
+            display: flex;
+            /* Para alinear input y botón */
+            margin-bottom: 20px;
+            /* Separación del formulario a las opciones */
+            border: 1px solid #ccc;
+            /* Borde del input como en la imagen */
+        }
+
+        .newsletter-form input[type="email"] {
+            flex-grow: 1;
+            /* Permite que el input ocupe el espacio restante */
+            padding: 10px;
+            border: none;
+            /* Quitamos el borde individual para que el contenedor lo defina */
+            box-sizing: border-box;
+            /* Incluye padding en el ancho */
+            font-size: 0.9em;
+            /* Letra más pequeña en input */
+            color: #333;
+            background-color: #fff;
+        }
+
+        .newsletter-form button {
+            padding: 10px 15px;
+            /* Ajuste padding del botón */
+            background-color: #000;
+            /* Botón negro */
+            color: #fff;
+            /* Texto blanco */
+            border: none;
+            /* Quitamos el borde individual */
+            cursor: pointer;
+            font-size: 0.9em;
+            /* Letra más pequeña en botón */
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            background-color: #333;
+            /* Gris oscuro al pasar el ratón */
+        }
+
+        .newsletter-options {
+            margin-top: 0;
+            /* Ya tenemos margen en el párrafo de arriba */
+            display: flex;
+            flex-direction: column;
+            /* Apila las opciones verticalmente */
+            gap: 10px;
+        }
+
+        .newsletter-options label {
+            display: flex;
+            align-items: center;
+            font-size: 0.85em;
+            /* Tamaño de letra más pequeño */
+            color: #555;
+        }
+
+        .newsletter-options input[type="radio"] {
+            margin-right: 8px;
+            -webkit-appearance: none;
+            /* Estilo personalizado para el radio button */
+            -moz-appearance: none;
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #999;
+            border-radius: 50%;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            flex-shrink: 0;
+            /* Evita que el radio se achique en móviles */
+        }
+
+        .newsletter-options input[type="radio"]:checked {
+            background-color: #000;
+            /* Relleno negro al seleccionar */
+            border-color: #000;
+        }
+
+        .newsletter-options input[type="radio"]:checked::before {
+            content: '';
+            display: block;
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            /* Punto blanco en el centro */
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .footer-social ul {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+            margin-bottom: 0;
+            /* Elimina margen inferior extra */
+        }
+
+        .footer-social ul li a {
+            font-size: 1.1em;
+            /* Íconos un poco más pequeños */
+            color: #555;
+            /* Iconos sociales gris oscuro */
+            transition: color 0.3s ease;
+        }
+
+        .footer-social ul li a:hover {
+            color: #000;
+            /* Negro al pasar el ratón */
+        }
+
+        .footer-links ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links ul li a {
+            font-size: 0.85em;
+            /* Letra más pequeña para enlaces */
+            color: #555;
+            /* Enlaces gris oscuro */
+            transition: color 0.3s ease;
+        }
+
+        .footer-links ul li a:hover {
+            color: #000;
+            /* Negro al pasar el ratón */
+        }
+
+        .footer-contact ul li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            font-size: 0.85em;
+            /* Letra más pequeña para contacto */
+            color: #555;
+        }
+
+        .footer-contact ul li i {
+            margin-right: 10px;
+            font-size: 0.95em;
+            /* Íconos de contacto un poco más pequeños */
+            color: #555;
+        }
+
+        /* --- Media Queries para Responsividad --- */
+        @media (max-width: 768px) {
+            .header-top {
+                flex-direction: column;
+                padding: 10px;
+                justify-content: center;
+                /* Centrar elementos cuando se apilan */
+            }
+
+            .nav-links {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .nav-links ul {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .logo {
+                margin-bottom: 10px;
+                /* Margen debajo del logo cuando está apilado */
+            }
+
+            .hero-content h1 {
+                font-size: 2.5em;
+            }
+
+            .hero-content p {
+                font-size: 1em;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                /* Las columnas del footer se apilan en móvil */
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer-column {
+                min-width: unset;
+                /* Quita el ancho mínimo para que se ajusten mejor */
+                width: 100%;
+                /* Ocupa todo el ancho disponible */
+                padding: 20px 0;
+                /* Más padding para separar las columnas apiladas */
+                border-bottom: 1px solid #eee;
+                /* Separador entre columnas en móvil */
+            }
+
+            .footer-column:last-child {
+                border-bottom: none;
+                /* No hay separador en la última columna */
+            }
+
+            .newsletter-form input[type="email"] {
+                width: calc(100% - 80px);
+                /* Ajuste para el botón */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-links ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-links li {
+                margin: 5px 0;
+            }
+
+            .hero-content {
+                padding: 20px;
+            }
+
+            .hero-content h1 {
+                font-size: 2em;
+            }
+
+            .hero-content p {
+                font-size: 0.9em;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+                /* Una columna en pantallas muy pequeñas */
+            }
+
+            .whatsapp-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 25px;
+                bottom: 15px;
+                right: 15px;
+            }
+        }

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabelala - Tu Estilo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="isa.css" >
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-top">
+            <div class="logo">
+                <a href="#inicio">ISABELA</a>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#productos">PRODUCTOS</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="inicio" class="hero-section">
+        <div class="hero-content">
+            <h1>The Puffer Jacket</h1>
+            <p>Cómodos, versátiles y elevados, ningún guardarropas está completo sin uno compañero puffer.</p>
+            <a href="#productos" class="btn-vermas">Ver más</a>
+        </div>
+        <div class="whatsapp-icon">
+            <a href="https://wa.me/5491131047326" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </main>
+
+    <section id="productos" class="products-section">
+        <h2>Nuestros Productos</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="img/isa_1.jpeg" alt="Vestido Floral">
+                <div class="product-info">
+                    <p class="product-title">Vestido Floral</p>
+                    <p class="product-price">$35.000</p>
+                    <button class="btn-comprar" onclick="openPaymentPage()">Comprar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/isa_2.jpeg" alt="Blusa Elegante">
+                <div class="product-info">
+                    <p class="product-title">Blusa Elegante</p>
+                    <p class="product-price">$25.000</p>
+                    <button class="btn-comprar" onclick="openPaymentPage()">Comprar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/isa_3.jpeg" alt="Falda Midi">
+                <div class="product-info">
+                    <p class="product-title">Falda Midi</p>
+                    <p class="product-price">$30.000</p>
+                    <button class="btn-comprar" onclick="openPaymentPage()">Comprar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/isa_4.jpeg" alt="Vestido Floral">
+                <div class="product-info">
+                    <p class="product-title">Vestido Floral</p>
+                    <p class="product-price">$35.000</p>
+                    <button class="btn-comprar" onclick="openPaymentPage()">Comprar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/isa_5.jpeg" alt="Blusa Casual">
+                <div class="product-info">
+                    <p class="product-title">Blusa Casual</p>
+                    <p class="product-price">$22.000</p>
+                    <button class="btn-comprar" onclick="openPaymentPage()">Comprar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/isa_6.jpeg" alt="Pantalón Slim Fit">
+                <div class="product-info">
+                    <p class="product-title">Pantalón Slim Fit</p>
+                    <p class="product-price">$40.000</p>
+                    <button class="btn-comprar" onclick="openPaymentPage()">Comprar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/isa_7.jpeg" alt="Pantalón Slim Fit">
+                <div class="product-info">
+                    <p class="product-title">Pantalón Slim Fit</p>
+                    <p class="product-price">$40.000</p>
+                    <button class="btn-comprar" onclick="openPaymentPage()">Comprar</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/isa_8.jpeg" alt="Pantalón Slim Fit">
+                <div class="product-info">
+                    <p class="product-title">Pantalón Slim Fit</p>
+                    <p class="product-price">$40.000</p>
+                    <button class="btn-comprar" onclick="openPaymentPage()">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="main-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Sé lo primero en enterarte de las últimas novedades.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Ingresá tu email" aria-label="Ingresa tu email">
+                    <button type="submit">Confirmar</button>
+                </form>
+                <div class="newsletter-options">
+                    <label>
+                        <input type="radio" name="newsletter_type" value="isabelala.com" checked>
+                        ISABELA.COM
+                    </label>
+                    <label>
+                        <input type="radio" name="newsletter_type" value="isabelala.outlet">
+                        ISABELA OUTLET
+                    </label>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Sobre Isabela</h3>
+                <p>Conocé la historia de la marca <a href="#" style="font-weight: bold; color: #333;">desde aquí</a>.
+                </p>
+
+                <h3 style="margin-top: 25px;">Seguinos en nuestras redes</h3>
+                <ul class="footer-social">
+                    <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i> isabela.clothing</a></li>
+                    <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i> isabela.clothing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <ul class="footer-contact">
+                    <li><a href="#"><i class="far fa-envelope"></i> Escribinos</a></li>
+                    <br>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i> 1131047326</a></li>
+                    <br>
+                    <li><a href="#"><i class="far fa-question-circle"></i> Preguntas frecuentes</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="isa.js"></script>
+
+</body>
+
+</html>
