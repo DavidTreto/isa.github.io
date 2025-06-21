@@ -2,7 +2,7 @@
 function openPaymentPage() {
   // Asegúrate de que la ruta a 'copia1.2.html' sea correcta en tu servidor XAMPP
   // Por ejemplo: 'http://localhost/ejercicios/copia1.2.html' o '/ejercicios/copia1.2.html'
-  window.open("copia1.2.html", "_blank");
+  window.open("indexb.html", "_blank");
 }
 
 // --- JavaScript para Smooth Scroll ---
