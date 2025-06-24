@@ -28,7 +28,7 @@
             /* Hace que el encabezado se quede fijo al hacer scroll */
             top: 0;
             left: 0;
-            background-color: rgba(255, 255, 255, 0.95);
+            background-color: #000000;
             /* Fondo blanco casi opaco */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             z-index: 1000;
@@ -61,14 +61,14 @@
         .nav-links li a {
             font-size: 14px;
             font-weight: bold;
-            color: #555;
+            color: #ffffff;
             /* Gris oscuro */
             text-transform: uppercase;
             transition: color 0.3s ease;
         }
 
         .nav-links li a:hover {
-            color: #000;
+            color: #b9b9b9;
             /* Negro al pasar el ratón */
         }
 
