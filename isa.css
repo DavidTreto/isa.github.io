@@ -553,6 +553,14 @@
                 width: calc(100% - 80px);
                 /* Ajuste para el botón */
             }
+                 .product-card img {
+       
+            height: 100%;
+            /* Altura fija para las imágenes */
+           
+            /* Recorta la imagen para que quepa */
+            display: block;
+        }
 
 
                 #inicio.hero-section {
@@ -560,6 +568,7 @@
     background-position: center;  /* Enfoca en la parte superior */
     background-repeat: no-repeat;
   }
+                
         }
 
         @media (max-width: 480px) {
