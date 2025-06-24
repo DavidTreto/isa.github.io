@@ -104,7 +104,7 @@
             color: #fff;
             /* Color del texto sobre la imagen */
             text-align: center;
-            padding-top: 80px;
+            padding-top: 50px;
             /* Espacio para que el header fijo no tape el contenido */
         }
 
@@ -496,16 +496,17 @@
 
         /* --- Media Queries para Responsividad --- */
         @media (max-width: 768px) {
+
+               background-size: 170%;      /* Hace la imagen más “pequeña” visualmente */
+               background-position: center;  /* Enfoca en la parte superior */
+               background-repeat: no-repeat;
+          }
             .header-top {
                 flex-direction: column;
                 padding: 10px;
                 justify-content: center;
                 /* Centrar elementos cuando se apilan */
             }
-                background-size: 170%;      /* Hace la imagen más “pequeña” visualmente */
-    background-position: center;  /* Enfoca en la parte superior */
-    background-repeat: no-repeat;
-  }
 
             .nav-links {
                 width: 100%;
