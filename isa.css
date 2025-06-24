@@ -556,12 +556,6 @@
         }
 
         @media (max-width: 480px) {
-                
-                  #inicio.hero-section {
-    background-size: 170%;      /* Hace la imagen más “pequeña” visualmente */
-    background-position: center;  /* Enfoca en la parte superior */
-    background-repeat: no-repeat;
-  }
             .nav-links ul {
                 flex-wrap: wrap;
                 justify-content: center;
