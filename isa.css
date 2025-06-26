@@ -7,6 +7,7 @@
             /* Texto principal oscuro */
             overflow-x: hidden;
             /* Evita scroll horizontal no deseado */
+                padding-top: 80px;
         }
 
         a {
@@ -26,7 +27,7 @@
             width: 100%;
             position: fixed;
             /* Hace que el encabezado se quede fijo al hacer scroll */
-            top: 0;
+            top: 30px;
             left: 0;
             background-color: #000000;
             /* Fondo blanco casi opaco */
@@ -104,7 +105,7 @@
             color: #fff;
             /* Color del texto sobre la imagen */
             text-align: center;
-            padding-top: 50px;
+           /* padding-top: 50px;  este se elimina pero lo dejo aca y hago estooooooooooooooooooooooooo*/
             /* Espacio para que el header fijo no tape el contenido */
         }
 
@@ -341,6 +342,48 @@
             margin-bottom: 15px;
             color: #555;
         }
+
+/* --- Estilos del Banner Deslizante (NUEVO) --- */
+/* >>> MODIFICACIÓN 4: Sección completamente nueva para el banner */
+.top-promo-banner {
+    width: 100%;
+    background-color: #f075f7;
+    color: #000;
+    padding: 8px 0; 
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    z-index: 1002; 
+}
+
+/* >>> MODIFICACIÓN 5: Sección completamente nueva para el contenedor del texto del banner */
+.promo-text-container {
+    display: inline-block;
+    animation: scroll-left 30s linear infinite;
+}
+
+/* >>> MODIFICACIÓN 6: Sección completamente nueva para cada ítem de texto del banner */
+.promo-item {
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 14px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* >>> MODIFICACIÓN 7: Sección completamente nueva para la animación del banner */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
 
         .newsletter-form {
             display: flex;
