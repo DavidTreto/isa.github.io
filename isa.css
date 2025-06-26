@@ -538,114 +538,148 @@
         }
 
         /* --- Media Queries para Responsividad --- */
-        @media (max-width: 768px) {
-            .header-top {
-                flex-direction: column;
-                padding: 10px;
-                justify-content: center;
-                /* Centrar elementos cuando se apilan */
-            }
+@media (max-width: 768px) {
+    #inicio.hero-section {
+        background-size: 170%;
+        /* Hace la imagen más “pequeña” visualmente */
+        background-position: center;
+        /* Enfoca en la parte superior */
+        background-repeat: no-repeat;
+    }
 
-            .nav-links {
-                width: 100%;
-                margin-bottom: 10px;
-            }
+    .product-card img {
+        height: 100%;
+        /* Altura fija para las imágenes */
+        /* Recorta la imagen para que quepa */
+        display: block;
+    }
 
-            .nav-links ul {
-                justify-content: center;
-                gap: 15px;
-            }
+    .header-top {
+        flex-direction: column;
+        padding: 10px;
+        justify-content: center;
+        /* Centrar elementos cuando se apilan */
+    }
 
-            .logo {
-                margin-bottom: 10px;
-                /* Margen debajo del logo cuando está apilado */
-            }
+    .nav-links {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 
-            .hero-content h1 {
-                font-size: 2.5em;
-            }
+    .nav-links ul {
+        justify-content: center;
+        gap: 15px;
+    }
 
-            .hero-content p {
-                font-size: 1em;
-            }
+    .logo {
+        margin-bottom: 10px;
+        /* Margen debajo del logo cuando está apilado */
+    }
 
-            .footer-content {
-                flex-direction: column;
-                /* Las columnas del footer se apilan en móvil */
-                align-items: center;
-                text-align: center;
-            }
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
 
-            .footer-column {
-                min-width: unset;
-                /* Quita el ancho mínimo para que se ajusten mejor */
-                width: 100%;
-                /* Ocupa todo el ancho disponible */
-                padding: 20px 0;
-                /* Más padding para separar las columnas apiladas */
-                border-bottom: 1px solid #eee;
-                /* Separador entre columnas en móvil */
-            }
+    .hero-content p {
+        font-size: 1em;
+    }
 
-            .footer-column:last-child {
-                border-bottom: none;
-                /* No hay separador en la última columna */
-            }
+    .footer-content {
+        flex-direction: column;
+        /* Las columnas del footer se apilan en móvil */
+        align-items: center;
+        text-align: center;
+    }
 
-            .newsletter-form input[type="email"] {
-                width: calc(100% - 80px);
-                /* Ajuste para el botón */
-            }
-                 .product-card img {
-       
-            height: 100%;
-            /* Altura fija para las imágenes */
-           
-            /* Recorta la imagen para que quepa */
-            display: block;
-        }
+    .footer-column {
+        min-width: unset;
+        /* Quita el ancho mínimo para que se ajusten mejor */
+        width: 100%;
+        /* Ocupa todo el ancho disponible */
+        padding: 20px 0;
+        /* Más padding para separar las columnas apiladas */
+        border-bottom: 1px solid #eee;
+        /* Separador entre columnas en móvil */
+    }
 
+    .footer-column:last-child {
+        border-bottom: none;
+        /* No hay separador en la última columna */
+    }
 
-                #inicio.hero-section {
-    background-size: 170%;      /* Hace la imagen más “pequeña” visualmente */
-    background-position: center;  /* Enfoca en la parte superior */
-    background-repeat: no-repeat;
-  }
-                
-        }
+    .newsletter-form input[type="email"] {
+        width: calc(100% - 80px);
+        /* Ajuste para el botón */
+    }
 
-        @media (max-width: 480px) {
-            .nav-links ul {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
+    /* >>> MODIFICACIÓN 8: AJUSTES PARA EL BANNER EN MÓVIL (768px) */
+    .top-promo-banner {
+        padding: 5px 0; /* Menos padding para hacerlo más compacto */
+    }
 
-            .nav-links li {
-                margin: 5px 0;
-            }
+    .promo-item {
+        font-size: 12px; /* Texto más pequeño */
+        margin-right: 30px; /* Menos espacio entre ítems */
+    }
 
-            .hero-content {
-                padding: 20px;
-            }
+    /* >>> MODIFICACIÓN 9: AJUSTE DEL PADDING SUPERIOR DEL BODY PARA MÓVILES */
+    body {
+        padding-top: 90px; /* Ajuste para el banner más compacto + header */
+    }
 
-            .hero-content h1 {
-                font-size: 2em;
-            }
+    /* >>> MODIFICACIÓN 10: AJUSTE DEL 'TOP' DEL HEADER EN MÓVIL */
+    .main-header {
+        top: 25px; /* Ajusta la posición del header debajo del banner más pequeño */
+    }
+}
 
-            .hero-content p {
-                font-size: 0.9em;
-            }
+@media (max-width: 480px) {
+    .nav-links ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-            .product-grid {
-                grid-template-columns: 1fr;
-                /* Una columna en pantallas muy pequeñas */
-            }
+    .nav-links li {
+        margin: 5px 0;
+    }
 
-            .whatsapp-icon {
-                width: 50px;
-                height: 50px;
-                font-size: 25px;
-                bottom: 15px;
-                right: 15px;
-            }
-        }
+    .hero-content {
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 0.9em;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        /* Una columna en pantallas muy pequeñas */
+    }
+
+    .whatsapp-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    /* >>> MODIFICACIÓN 11: AJUSTES ESPECÍFICOS PARA EL BANNER EN PANTALLAS MUY PEQUEÑAS (480px) */
+    .promo-item {
+        font-size: 10px; /* Aún más pequeño */
+        margin-right: 20px;
+    }
+
+    /* Si el header o el banner se ven muy apretados, puedes ajustar el padding-top del body aquí también */
+    body {
+        padding-top: 85px; /* Otro ajuste para pantallas muy pequeñas */
+    }
+
+    .main-header {
+        top: 20px; /* Otro ajuste para pantallas muy pequeñas */
+    }
+}
