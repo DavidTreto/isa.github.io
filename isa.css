@@ -7,7 +7,7 @@
             /* Texto principal oscuro */
             overflow-x: hidden;
             /* Evita scroll horizontal no deseado */
-                padding-top: 80px;
+            padding-top: 80px;
         }
 
         a {
@@ -105,7 +105,7 @@
             color: #fff;
             /* Color del texto sobre la imagen */
             text-align: center;
-           /* padding-top: 50px;  este se elimina pero lo dejo aca y hago estooooooooooooooooooooooooo*/
+           
             /* Espacio para que el header fijo no tape el contenido */
         }
 
