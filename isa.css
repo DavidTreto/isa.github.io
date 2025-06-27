@@ -686,21 +686,7 @@
     }
 }
 
-/* --- Video de fondo hero section --- */
-#inicio.hero-section {
-  position: relative;
-  overflow: hidden;
-}
 
-#inicio.hero-section .background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
 
 
 
