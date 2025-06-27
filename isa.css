@@ -347,9 +347,9 @@
 /* >>> MODIFICACIÓN 4: Sección completamente nueva para el banner */
 .top-promo-banner {
     width: 100%;
-    background-color: #f075f7;
-    color: #000;
-    padding: 8px 0; 
+    background-color: #ff0a0a;
+    color: #ffffff;
+    padding: 6px 0; 
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
