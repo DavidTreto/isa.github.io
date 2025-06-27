@@ -541,13 +541,7 @@
 
         /* --- Media Queries para Responsividad --- */
 @media (max-width: 768px) {
-    #inicio.hero-section {
-        background-size: 170%;
-        /* Hace la imagen más “pequeña” visualmente */
-        background-position: center;
-        /* Enfoca en la parte superior */
-        background-repeat: no-repeat;
-    }
+   
 
     .product-card img {
         height: 100%;
