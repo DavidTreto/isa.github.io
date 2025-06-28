@@ -112,7 +112,7 @@
 /* Media Queries específicas para la sección de productos */
 @media (max-width: 768px) {
     .products-section {
-        padding: 40px 10px; /* Reduce aún más el padding lateral de la sección */
+        padding: 100px 10px; /* Reduce aún más el padding lateral de la sección */
     }
 
     .products-section h2 {
