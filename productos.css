@@ -147,7 +147,7 @@
 
 @media (max-width: 480px) {
     .products-section {
-        padding: 100px 5px; /* Reducimos drásticamente el padding lateral de la sección */
+        padding: 100px 20px; /* Reducimos drásticamente el padding lateral de la sección */
     }
     .products-section h2 {
         font-size: 1.6em;
