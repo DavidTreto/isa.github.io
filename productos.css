@@ -1,0 +1,177 @@
+/* --- Seccion de Productos (Products Section) - Estilo Markova --- */
+.products-section {
+    padding: 60px 20px; /* Padding general */
+    max-width: 1280px; /* Ancho máximo un poco mayor para más espacio */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 2.5em; /* Título de la categoría */
+    margin-bottom: 40px;
+    color: #1a1a1a; /* Negro más intenso para el título */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500; /* Peso de fuente medio */
+}
+
+/* Grilla de productos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px; /* Espacio entre las tarjetas */
+    padding: 0;
+}
+
+/* Tarjeta de producto individual - Estilo Markova */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #eee; /* Borde muy sutil para definir la tarjeta */
+    border-radius: 0; /* Bordes cuadrados, como Markova */
+    overflow: hidden;
+    box-shadow: none; /* Sin sombra por defecto para un look más plano */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transición suave para hover */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+    position: relative;
+}
+
+.product-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil al pasar el ratón */
+    transform: translateY(-2px); /* Ligerísimo levantamiento */
+}
+
+.product-card a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    z-index: 1;
+}
+
+.product-card img {
+    width: 100%;
+    max-height: 400px; /* Aumentamos la altura máxima */
+    object-fit: cover; /*  Ajusta la imagen dentro del contenedor sin recortar, manteniendo la proporción */
+    display: block;
+}
+
+.product-info {
+    padding: 15px;
+    text-align: left;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.product-title {
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: #333;
+    text-transform: none;
+}
+
+.product-price {
+    font-size: 1.1em;
+    color: #1a1a1a;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.btn-comprar {
+    display: block;
+    background-color: transparent;
+    color: #000;
+    padding: 10px 15px;
+    border: 1px solid #000;
+    border-radius: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+/* Media Queries específicas para la sección de productos */
+@media (max-width: 768px) {
+    .products-section {
+        padding: 40px 10px; /* Reduce aún más el padding lateral de la sección */
+    }
+
+    .products-section h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+
+    .product-card img {
+        max-height: 320px; /* Aumentamos la altura máxima responsive */
+        object-fit: contain;
+    }
+
+    .product-title {
+        font-size: 0.95em;
+    }
+
+    .product-price {
+        font-size: 1em;
+    }
+
+    .btn-comprar {
+        padding: 8px 12px;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-section {
+        padding: 30px 5px; /* Reducimos drásticamente el padding lateral de la sección */
+    }
+    .products-section h2 {
+        font-size: 1.6em;
+    }
+
+    .product-card img {
+        max-height: 260px; /* Aumentamos la altura máxima responsive */
+object-fit: contain;
+    }
+    .product-info {
+        padding: 8px; /* Reducimos más el padding interno para aprovechar el ancho */
+    }
+
+    .product-title {
+        font-size: 0.9em;
+    }
+
+    .product-price {
+        font-size: 0.95em;
+    }
+
+    .btn-comprar {
+        padding: 7px 10px;
+        font-size: 0.75em;
+    }
+
+}
