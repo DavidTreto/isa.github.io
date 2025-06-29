@@ -15,3 +15,19 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+
+
+// Carrusel automático solo en móviles
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".mobile-carousel .carousel-slide");
+  let currentSlide = 0;
+
+  if (slides.length > 0) {
+    setInterval(() => {
+      slides[currentSlide].classList.remove("active");
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add("active");
+    }, 4000); // Cambia cada 4 segundos
+  }
+});
